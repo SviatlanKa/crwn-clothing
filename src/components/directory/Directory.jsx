@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import { sections } from "./Directory.data";
 import MenuItem from '../menu-item/MenuItem';
 import './Directory.scss';
