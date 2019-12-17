@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CollectionPreview from '../../components/collection-preview/CollectionPreview';
-import { SHOP_DATA} from './shop.data';
+import { SHOP_DATA} from '../../redux/shop/shop.data';
 
 class ShopPage extends Component {
     constructor(props) {
