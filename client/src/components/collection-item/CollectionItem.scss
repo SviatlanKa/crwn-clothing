@@ -5,6 +5,13 @@
   height: 350px;
   align-items: center;
   position: relative;
+  padding: 10px;
+
+
+  @media screen and (max-width: 800px) {
+    width: 40vw;
+    padding: 0;
+  }
 
   .image {
     width: 100%;
@@ -20,6 +27,10 @@
     display: flex;
     justify-content: space-between;
     font-size: 18px;
+
+    @media screen and (max-width: 800px){
+      font-size: 14px;
+    }
 
     .name {
       width: 90%;
@@ -37,6 +48,12 @@
     top: 70%;
     display: none;
     opacity: .7;
+
+    @media screen and (max-width: 800px) {
+      display: unset;
+      min-width: unset;
+      padding: 0 10px;
+    }
   }
 
   &:hover {
