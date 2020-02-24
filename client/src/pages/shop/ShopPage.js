@@ -1,12 +1,12 @@
 import React, { useEffect, lazy, Suspense } from 'react';
+import ErrorBoundary from '../../components/error-boundary/ErrorBoundary';
 import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchCollectionsStart } from '../../redux/shop/shop-actions';
-import ErrorBoundary from '../../components/error-boundary/ErrorBoundary';
 import Spinner from '../../components/spinner/Spinner';
 
-const CollectionOverviewContainer = lazy(import('../../components/collections-overview/CollectionsOverviewContainer'));
-const CollectionPageContainer = lazy(import('../collection/CollectionPageContainer'));
+const CollectionOverviewContainer = lazy(() => import('../../components/collections-overview/CollectionsOverviewContainer'));
+const CollectionPageContainer = lazy(() => import('../collection/CollectionPageContainer'));
 
 const ShopPage = ({ fetchCollectionsStart, match }) => {
     useEffect(() => {
@@ -28,6 +28,7 @@ const ShopPage = ({ fetchCollectionsStart, match }) => {
                 </Suspense>
             </ErrorBoundary>
         </div>
+
     )
 };
 

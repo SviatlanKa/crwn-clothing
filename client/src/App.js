@@ -1,10 +1,10 @@
 import React, { useEffect, lazy, Suspense } from 'react';
+import ErrorBoundary from './components/error-boundary/ErrorBoundary';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { checkUserSession } from './redux/user/user-actions';
 import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from './redux/user/user-selectors';
-import ErrorBoundary from './components/error-boundary/ErrorBoundary';
 import Header from "./components/header/Header";
 import Spinner from './components/spinner/Spinner';
 import './App.css';
