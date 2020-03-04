@@ -1,4 +1,5 @@
 import CartActionTypes from './cart-types';
+import UserActionTypes from "../user/user-types";
 
 export const toggleCartHidden = () => ({
     type: CartActionTypes.TOGGLE_CART_HIDDEN
@@ -21,4 +22,9 @@ export const clearItemFromCart = item => ({
 
 export const clearCart = () => ({
     type: CartActionTypes.CLEAR_CART
-})
+});
+
+export const updateCartFromFirebase = cartItems => ({
+    type: CartActionTypes.UPDATE_CART_FROM_FIREBASE,
+    payload: cartItems
+});
