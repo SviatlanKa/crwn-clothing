@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`expect render CartDropdown component 1`] = `
+exports[`CartDropdown Component expect render CartDropdown component 1`] = `
 <div
   className="cart-dropdown"
 >

@@ -14,7 +14,7 @@ const ShopPage = lazy(() => import('./pages/shop/ShopPage'));
 const SignInAndSignUpPage = lazy(() => import('./pages/sign-in-sign-up/SignInAndSignUpPage'));
 const CheckoutPage = lazy(() => import('./pages/checkout/CheckoutPage'));
 
-const App = ({ checkUserSession, currentUser }) => {
+export const App = ({ checkUserSession, currentUser }) => {
     useEffect(() => {
         checkUserSession();
     }, [checkUserSession]);

@@ -5,12 +5,12 @@ import CartItem from './CartItem';
 
 
 it('expect render CartItem component', () => {
-    const item = {
+    const mockItem = {
         imageUrl: 'www.images/blue-hat.jpg',
         price: 100,
         name: 'Blue Hat',
         quantity: 3
     };
-    const wrapper = shallow(<CartItem item={item} />);
+    const wrapper = shallow(<CartItem item={mockItem} />);
     expect(wrapper).toMatchSnapshot();
 })
