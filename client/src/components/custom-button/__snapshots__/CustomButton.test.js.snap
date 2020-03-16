@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect render CartDropdown component 1`] = `
+<button
+  className="inverted google-sign-in custom-button"
+>
+  <Component />
+</button>
+`;

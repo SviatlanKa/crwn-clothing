@@ -1,3 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`expect render CartDropdown component 1`] = `ShallowWrapper {}`;
+exports[`expect render CartDropdown component 1`] = `
+<div
+  className="cart-dropdown"
+>
+  <div
+    className="cart-items"
+  >
+    <Memo(CartItem)
+      item={
+        Object {
+          "id": 5,
+          "imageUrl": "www.images/blue-hat.jpg",
+          "name": "Blue Hat",
+          "price": 100,
+          "quantity": 3,
+        }
+      }
+      key="5"
+    />
+  </div>
+  <CustomButton
+    onClick={[Function]}
+  >
+    GO TO CHECKOUT
+  </CustomButton>
+</div>
+`;

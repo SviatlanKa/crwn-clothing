@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect render CartItem component 1`] = `
+<div
+  className="cart-item"
+>
+  <img
+    alt="item"
+    src="www.images/blue-hat.jpg"
+  />
+  <div
+    className="item-details"
+  >
+    <span
+      className="name"
+    >
+      Blue Hat
+    </span>
+    <span>
+      3
+       x $
+      100
+    </span>
+  </div>
+</div>
+`;
