@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing FormInput component render FormInput Component 1`] = `
+<div
+  className="group"
+>
+  <input
+    className="form-input"
+    onChange={[MockFunction]}
+    value=""
+  />
+  <label
+    className="form-input-label"
+  >
+    some text
+  </label>
+</div>
+`;
