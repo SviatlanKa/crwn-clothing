@@ -15,14 +15,15 @@ export const fetchCollectionsFailure = error => ({
     payload: error
 });
 
-export const fetchCollectionsStartAsync = () => {
-    return dispatch => {
-        const collectionRef = firestore.collection('collections');
-        dispatch(fetchCollectionsStart());
-
-        collectionRef.get().then(snapshot => {
-            const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
-            dispatch(fetchCollectionsSuccess(collectionsMap));
-        }).catch(error => dispatch(fetchCollectionsFailure(error.message)));
-    }
-};
+//function from thunk
+// export const fetchCollectionsStartAsync = () => {
+//     return dispatch => {
+//         const collectionRef = firestore.collection('collections');
+//         dispatch(fetchCollectionsStart());
+//
+//         collectionRef.get().then(snapshot => {
+//             const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
+//             dispatch(fetchCollectionsSuccess(collectionsMap));
+//         }).catch(error => dispatch(fetchCollectionsFailure(error.message)));
+//     }
+// };
